@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Management System</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../main.css">
+	 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Student Management System</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+     <li class="nav-item">
+        <a class="nav-link" th:href="@{/home}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/home_courses}">Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/signout}">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<div class = "container mt-5">
+			<div class = "row list-links">
+			<div class = "col-lg-3">
+				<a th:href = "@{/students/new}" class = ""> Add Student</a>
+			</div>
+			<div class = "col-lg-3">
+				<a th:href = "@{/courses/new}" class = ""> Add Course</a>
+			</div>
+			<div class = "col-lg-3">
+				<a th:href = "@{/students}" class = ""> List students</a>
+			</div>
+			<div class = "col-lg-3">
+				<a th:href = "@{/courses}" class = ""> List courses</a>
+			</div>
+			</div>
+			<div class ="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+				<h4 class = "text-center"> Create New Course </h4>
+				<p th:text="*{errorMsg}" style="color:red;text-align:center"></p>
+				<div class = "card-body">
+					<form th:action="@{/addCourse}" th:object = "${course}" method="POST">
+					<div class ="form-group">
+							<label> Course ID<span style="color:red">*</span> </label>
+							<input
+							type = "text"
+							name = "cid"
+							th:field = "*{cid}"
+							class = "form-control"
+							placeholder="Enter Course ID" 
+							/>
+						</div>
+						<div class ="form-group">
+							<label> Course Name<span style="color:red">*</span> </label>
+							<input
+							type = "text"
+							name = "courseName"
+							th:field = "*{courseName}"
+							class = "form-control"
+							placeholder="Enter Course name" 
+							/>
+						</div>
+						
+						<div class ="form-group">
+							<label> Faculty Name<span style="color:red">*</span> </label>
+							<input
+							type = "text"
+							name = "facultyName"
+							th:field = "*{facultyName}"
+							class = "form-control"
+							placeholder="Enter faculty name" 
+							/>
+						</div>
+						
+						<div class ="form-group">
+							<label> Course Fee<span style="color:red">*</span></label>
+							<input
+							type = "text"
+							name = "fee"
+							th:field = "*{courseFee}"
+							class = "form-control"
+							placeholder="Enter Course Fee" 
+							/>
+						</div>
+						
+						<div class ="form-group">
+							<label> Course Duration</label>
+							<select th:field="*{courseDuration}" class = "form-control">
+    							<option th:value="'1 Month'" th:text="'1 Month'"></option>
+    							<option th:value="'2 Months'" th:text="'2 Months'"></option>
+    							<option th:value="'3 Months'" th:text="'3 Months'"></option>
+							</select>
+						</div>
+						<div class ="form-group">
+							<label>Start Date</label>
+    						<input 
+    						type="date" 
+    						name = "startDate"
+    						class = "form-control"
+    						th:field="*{startDate}"
+    						/>
+    					</div>
+						<div class = "box-footer">
+							<button type="submit" class = "btn btn-primary">
+								Submit
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+.bg-dark {
+    background-color: #3700B3 !important;
+}
+.navbar-dark .navbar-brand {
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+.banner img{
+	height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+.our-courses{
+	padding-top:40px;
+}
+
+.our-courses h1 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.table-dark {
+    color: #fff;
+    background-color: #3700b399;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+h1.text-center {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color:#3700B3;
+    font-weight: 600;
+}
+.container.justify-content-center.card {
+    padding: 2rem;
+    box-shadow: 1px 3px 7px 2px #ccc;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #3700B3;
+    border-color: #3700B3;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    padding: 0px 20px;
+    height: 42px;
+    margin-top: 20px;
+}
+a.btn-primary {
+    color: #fff;
+    background-color: #3700B3;
+    border-color: #3700B3;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    padding: 0px 20px;
+    height: 42px;
+    margin-top: 20px;
+    padding-top:5px;
+    margin-top:0px;
+}
+.btn-secondary {
+    color: #3700B3;
+    background-color: #ffffff;
+    border-color: #3700B3;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    padding: 0px 20px;
+    height: 42px;
+    margin-top: 20px;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 20px;
+    height: 42px;
+    padding: 6px 18px;
+    font-size: 1.1rem;
+}
+.form-group label{
+	    font-size: 1rem;
+    padding-left: 15px;
+}
+.form-group .form-control{
+	    padding: 8px 20px;
+    border-radius: 20px;
+}
+.row.list-links {
+    
+}
+.list-links a{
+	text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    display: block;
+    padding: 50px;
+    border: 1px solid #ccc;
+    
+     box-shadow: 1px 3px 7px 2px #ccc;
+     border-radius:6px;
+     color:#3700B3;
+}
+.left-box{
+	padding:25px;
+	 box-shadow: 1px 3px 7px 2px #ccc;
+     border-radius:6px;
+	
+}
+.student-info{
+	    margin-top: 20px;
+}
+.student-info p{
+	margin: auto;
+}
+.left-box img{
+    margin: auto;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+.student-info b{
+font-weight: bolder;
+    min-width: 130px;
+    display: inline-block;
+}
+.head-text{
+	font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.a.btn.btn-primary {
+    padding-top: 5px;
+}
+.container.justify-content-center.card {
+    margin-top: 50px;
+    padding: 2rem;
+    box-shadow: 1px 3px 7px 2px #ccc;
+}
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+.form-control-file, .form-control-range {
+    display: block;
+    width: 100%;
+    margin-left: 15px;
+}
+.check-boxs input{
+	margin-left: 15px;
+    margin-right: 8px;
+}
+.table-bordered {
+    border: 1px solid #dee2e6;
+    margin-top: 40px;
+}
